@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Episode page tests generates a snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <main
+        class="sc-bdnxRM dktVZV"
+        width="70%"
+      >
+        <section
+          class="sc-bdnxRM byZzmS"
+          data-testid="episode-wrapper"
+        >
+          <h1
+            class="sc-jSFjdj cYWCdr"
+          >
+            #90-Pilot
+          </h1>
+          <p
+            class="sc-iCoGMd fFHScY"
+          >
+            This is the 01st episode in 01st session. It was aired on December 2, 2013. There are total of 1 featured characters in this episode
+          </p>
+          <div
+            class="sc-bdnxRM dNzzIz"
+          >
+            <article
+              class="sc-bdnxRM jDhRBX"
+              scale="1.02"
+              width="30%"
+            >
+              <span
+                class=" lazy-load-image-background blur"
+                style="display: inline-block; height: 50%; width: 100%;"
+              >
+                <img
+                  alt="episode character"
+                  height="50%"
+                  src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                  width="100%"
+                />
+              </span>
+              <h2
+                class="sc-eCApnc hQwxcN"
+                color="#1f1f1f"
+                font-style="normal"
+              >
+                Rick Sanchez
+              </h2>
+              <div
+                class="sc-bdnxRM DhlHX"
+              >
+                <p
+                  class="sc-iCoGMd gGpfF"
+                >
+                  From Earth (C-137), identifies as Male of Human race.
+                </p>
+                <p
+                  class="sc-iCoGMd KOcH"
+                >
+                  Current Status: Alive
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          class="sc-bdnxRM byZzmS"
+          data-testid="episode-wrapper"
+        >
+          <h1
+            class="sc-jSFjdj cYWCdr"
+          >
+            #90-Pilot
+          </h1>
+          <p
+            class="sc-iCoGMd fFHScY"
+          >
+            This is the 01st episode in 01st session. It was aired on December 2, 2013. There are total of 1 featured characters in this episode
+          </p>
+          <div
+            class="sc-bdnxRM dNzzIz"
+          >
+            <article
+              class="sc-bdnxRM jDhRBX"
+              scale="1.02"
+              width="30%"
+            >
+              <span
+                class=" lazy-load-image-background blur"
+                style="display: inline-block; height: 50%; width: 100%;"
+              >
+                <img
+                  alt="episode character"
+                  height="50%"
+                  src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                  width="100%"
+                />
+              </span>
+              <h2
+                class="sc-eCApnc hQwxcN"
+                color="#1f1f1f"
+                font-style="normal"
+              >
+                Rick Sanchez
+              </h2>
+              <div
+                class="sc-bdnxRM DhlHX"
+              >
+                <p
+                  class="sc-iCoGMd gGpfF"
+                >
+                  From Earth (C-137), identifies as Male of Human race.
+                </p>
+                <p
+                  class="sc-iCoGMd KOcH"
+                >
+                  Current Status: Alive
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main
+      class="sc-bdnxRM dktVZV"
+      width="70%"
+    >
+      <section
+        class="sc-bdnxRM byZzmS"
+        data-testid="episode-wrapper"
+      >
+        <h1
+          class="sc-jSFjdj cYWCdr"
+        >
+          #90-Pilot
+        </h1>
+        <p
+          class="sc-iCoGMd fFHScY"
+        >
+          This is the 01st episode in 01st session. It was aired on December 2, 2013. There are total of 1 featured characters in this episode
+        </p>
+        <div
+          class="sc-bdnxRM dNzzIz"
+        >
+          <article
+            class="sc-bdnxRM jDhRBX"
+            scale="1.02"
+            width="30%"
+          >
+            <span
+              class=" lazy-load-image-background blur"
+              style="display: inline-block; height: 50%; width: 100%;"
+            >
+              <img
+                alt="episode character"
+                height="50%"
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                width="100%"
+              />
+            </span>
+            <h2
+              class="sc-eCApnc hQwxcN"
+              color="#1f1f1f"
+              font-style="normal"
+            >
+              Rick Sanchez
+            </h2>
+            <div
+              class="sc-bdnxRM DhlHX"
+            >
+              <p
+                class="sc-iCoGMd gGpfF"
+              >
+                From Earth (C-137), identifies as Male of Human race.
+              </p>
+              <p
+                class="sc-iCoGMd KOcH"
+              >
+                Current Status: Alive
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="sc-bdnxRM byZzmS"
+        data-testid="episode-wrapper"
+      >
+        <h1
+          class="sc-jSFjdj cYWCdr"
+        >
+          #90-Pilot
+        </h1>
+        <p
+          class="sc-iCoGMd fFHScY"
+        >
+          This is the 01st episode in 01st session. It was aired on December 2, 2013. There are total of 1 featured characters in this episode
+        </p>
+        <div
+          class="sc-bdnxRM dNzzIz"
+        >
+          <article
+            class="sc-bdnxRM jDhRBX"
+            scale="1.02"
+            width="30%"
+          >
+            <span
+              class=" lazy-load-image-background blur"
+              style="display: inline-block; height: 50%; width: 100%;"
+            >
+              <img
+                alt="episode character"
+                height="50%"
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                width="100%"
+              />
+            </span>
+            <h2
+              class="sc-eCApnc hQwxcN"
+              color="#1f1f1f"
+              font-style="normal"
+            >
+              Rick Sanchez
+            </h2>
+            <div
+              class="sc-bdnxRM DhlHX"
+            >
+              <p
+                class="sc-iCoGMd gGpfF"
+              >
+                From Earth (C-137), identifies as Male of Human race.
+              </p>
+              <p
+                class="sc-iCoGMd KOcH"
+              >
+                Current Status: Alive
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
