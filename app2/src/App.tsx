@@ -1,5 +1,12 @@
+import { ChakraProvider } from '@chakra-ui/react'
+import Header from './components/Header'
+
 function App() {
-    return <div>This is app2 and header component comes from this project</div>
+    return (
+        <ChakraProvider>
+            <Header />
+        </ChakraProvider>
+    )
 }
 
 export default App
