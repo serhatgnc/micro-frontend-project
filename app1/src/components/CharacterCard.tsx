@@ -1,7 +1,7 @@
 import { CharacterTypes } from 'global'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
-import { Center, Heading, Text } from '../../../container/src/styles/styles'
+import { Center, Heading, Text } from '../styles/styles'
 
 const CharacterCard = ({ character }: { character: CharacterTypes }) => {
     return (

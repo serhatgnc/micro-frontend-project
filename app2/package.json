@@ -22,7 +22,8 @@
         "serve": "serve dist -p 3002",
         "test": "react-scripts test",
         "test-coverage": "npm test -- --coverage --watchAll=false",
-        "clean": "rm -rf dist"
+        "clean": "rm -rf dist",
+        "deploy": "aws s3 sync dist/ s3://rick-and-morty-app2"
     },
     "eslintConfig": {
         "extends": [

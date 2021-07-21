@@ -1,4 +1,5 @@
 import CharacterCard from './components/CharacterCard'
+import { GlobalStyles } from './styles/global'
 
 function App() {
     const character = {
@@ -15,6 +16,7 @@ function App() {
 
     return (
         <>
+            <GlobalStyles />
             <CharacterCard character={character} />
         </>
     )
