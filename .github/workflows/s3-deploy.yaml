@@ -1,0 +1,81 @@
+name: s3-deploy
+
+on: [push]
+
+jobs:
+    prereq:
+        name: Prerequisite
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [14.x]
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - run: npm install -g npm
+
+    deploy-1:
+        name: Deploying App1
+        needs: prereq
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Configure AWS Credentials
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ secrets.AWS_REGION }}
+            - name: Build React App
+              working-directory: ./app1
+              run: |
+                  npm install && npm run build
+            - name: Deploy app build to S3 bucket
+              working-directory: ./app1
+              run: |
+                  npm run deploy
+
+    deploy-2:
+        name: Deploying App-2
+        needs: prereq
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Configure AWS Credentials
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ secrets.AWS_REGION }}
+            - name: Build React App
+              working-directory: ./app2
+              run: |
+                  npm install && npm run build
+            - name: Deploy app build to S3 bucket
+              working-directory: ./app2
+              run: |
+                  npm run deploy
+
+    deploy-container:
+        name: Deploying Container
+        needs: prereq
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Configure AWS Credentials
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ secrets.AWS_REGION }}
+            - name: Build React App
+              working-directory: ./container
+              run: |
+                  npm install && npm run build
+            - name: Deploy app build to S3 bucket
+              working-directory: ./container
+              run: |
+                  npm run deploy

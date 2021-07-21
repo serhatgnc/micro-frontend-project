@@ -1,5 +1,5 @@
 function App() {
-    return <div>Header</div>
+    return <div>This is app2 and header component comes from this project</div>
 }
 
 export default App
