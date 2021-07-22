@@ -22,7 +22,7 @@
     "scripts": {
         "start": "webpack serve",
         "build": "webpack --config webpack.prod.js",
-        "serve": "serve dist -p 3002",
+        "serve": "serve dist -p 3001",
         "test": "react-scripts test",
         "test-coverage": "npm test -- --coverage --watchAll=false",
         "clean": "rm -rf dist",

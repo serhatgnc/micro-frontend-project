@@ -45,6 +45,11 @@ module.exports = {
                     eager: true,
                     requiredVersion: deps['react-dom'],
                 },
+                'react-router-dom': {
+                    requiredVersion: deps['react-router-dom'],
+                    singleton: true,
+                    eager: true,
+                },
             },
         }),
         new HtmlWebpackPlugin({
