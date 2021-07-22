@@ -29,7 +29,7 @@ const Locations = () => {
     }, [inView])
 
     return (
-        <Center as='main' justifyContent='flex-start' width='70%'>
+        <Center as='main' justifyContent='flex-start' width='70%' responsiveWidth={['80%', '90%']}>
             {locations?.map((location, index) => (
                 <LocationBox
                     key={location.id}

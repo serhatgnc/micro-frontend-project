@@ -20,6 +20,9 @@ interface ElementProps {
     transition?: string
     background?: string
     flexWrap?: string
+    responsiveWidth?: string[]
+    responsiveMargin?: string
+    responsivePadding?: string
 }
 
 export const Center = styled.div<ElementProps>`
@@ -42,6 +45,17 @@ export const Center = styled.div<ElementProps>`
         box-shadow: ${({ hover }) => hover};
         transform: ${({ scale }) => `scale(${scale})`};
         transition: ${({ transition }) => transition};
+    }
+    @media only screen and (max-width: 1280px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[0]};
+    }
+    @media only screen and (max-width: 1024px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[1]};
+    }
+    @media only screen and (max-width: 768px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[2]};
+        margin: ${({ responsiveMargin }) => responsiveMargin};
+        padding: ${({ responsivePadding }) => responsivePadding};
     }
 `
 

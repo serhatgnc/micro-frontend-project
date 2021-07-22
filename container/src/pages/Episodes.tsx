@@ -29,7 +29,7 @@ const Episodes = () => {
     }, [inView])
 
     return (
-        <Center as='main' justifyContent='flex-start' width='70%'>
+        <Center as='main' justifyContent='flex-start' width='70%' responsiveWidth={['80%', '90%']}>
             {episodes?.map((episode, index) => (
                 <EpisodeBox
                     key={episode.id}

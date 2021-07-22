@@ -20,6 +20,7 @@ interface ElementProps {
     transition?: string
     background?: string
     flexWrap?: string
+    responsiveWidth?: string[]
 }
 
 export const Center = styled.div<ElementProps>`
@@ -43,6 +44,15 @@ export const Center = styled.div<ElementProps>`
         transform: ${({ scale }) => `scale(${scale})`};
         transition: ${({ transition }) => transition};
     }
+    @media only screen and (max-width: 1280px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[0]};
+    }
+    @media only screen and (max-width: 1024px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[1]};
+    }
+    @media only screen and (max-width: 768px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[2]};
+    }
 `
 
 export const MainContainer = styled(Center)`
@@ -54,7 +64,7 @@ export const MainContainer = styled(Center)`
     overflow: visible;
 `
 
-export const Navbar = styled.nav`
+export const Navbar = styled.nav<ElementProps>`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +76,15 @@ export const Navbar = styled.nav`
     overflow: hidden;
     z-index: 1000;
     background: #eee;
+    @media only screen and (max-width: 1280px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[0]};
+    }
+    @media only screen and (max-width: 1024px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[1]};
+    }
+    @media only screen and (max-width: 768px) {
+        width: ${({ responsiveWidth }) => responsiveWidth?.[2]};
+    }
 `
 
 export const NavbarRoute = styled.a<ElementProps>`

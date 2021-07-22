@@ -11,7 +11,7 @@ const Navbar = () => {
         setPageRoute(history.location.pathname)
     }, [history.location])
     return (
-        <Navigation>
+        <Navigation responsiveWidth={['80%', '90%']}>
             <NavbarRoute
                 data-testid='navbar-episodes-route'
                 background={pageRoute === ROUTES.EPISODES ? '#FFDC85' : '#eee'}

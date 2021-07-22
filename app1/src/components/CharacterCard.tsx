@@ -14,6 +14,8 @@ const CharacterCard = ({ character }: { character: CharacterTypes }) => {
             width='30%'
             margin='0.75em'
             borderRadius='8px'
+            responsiveWidth={['35%', '40%', '45%']}
+            responsiveMargin='0.25em'
         >
             <LazyLoadImage
                 src={character.image}
@@ -25,7 +27,7 @@ const CharacterCard = ({ character }: { character: CharacterTypes }) => {
             <Heading color='#1f1f1f' fontStyle='normal' margin='0.5em 0 0 0'>
                 {character.name}
             </Heading>
-            <Center padding='0 1em' flexWrap='wrap'>
+            <Center padding='0 1em' flexWrap='wrap' responsivePadding='0 0.25em'>
                 <Text margin='1em 0'>
                     {`From ${character.origin.name}, identifies as ${character.gender} of ${character.species} race.`}
                 </Text>
