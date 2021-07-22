@@ -39,7 +39,7 @@ jobs:
                   npm run deploy
 
     deploy-2:
-        name: Deploying App-2
+        name: Deploying App2
         needs: prereq
         runs-on: ubuntu-latest
         steps:
